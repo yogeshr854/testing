@@ -35,8 +35,60 @@
             </div>
         </div>
     </div>
-   <div class="container">
+    <div class="section-container">
+        <div class="section">
+            <h2>Visit your Nearest Nash Mukti Kendra</h2>
+            <form id="locationForm">
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+              
+        </div>
+        <hr /> <!-- Horizontal line to separate sections -->
+        <div class="section">
+            <h2>Section 2</h2>
+            <p>Text for section 2 goes here.</p>
+        </div>
+        <hr /> <!-- Horizontal line to separate sections -->
+        <div class="section">
+            <h2>Section 3</h2>
+            <p>Text for section 3 goes here.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </div>
+    <script>
+        // Add JavaScript logic here if needed
+        document.getElementById("locationForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting (for this example)
+            
+            // Retrieve the values entered by the user
+            const pincode = document.getElementById("pincode").value;
+            const state = document.getElementById("state").value;
+            const district = document.getElementById("district").value;
+            const city = document.getElementById("city").value;
 
-   </div>
+            // You can now use these values as needed (e.g., send them to a server or perform actions with them)
+            // For this example, let's just display them in the console
+            console.log("Pincode:", pincode);
+            console.log("State:", state);
+            console.log("District:", district);
+            console.log("City:", city);
+        });
+    </script>
 </body>
 </html>
