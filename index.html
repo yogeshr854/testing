@@ -1,95 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
-    <link rel="stylesheet" href="style.css">
-    
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoberLifeSolutions</title>
+    <!-- favicon***************** -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images\favicon_io2\favicon.ico"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
     <div class="image-container">
-        <div class="overlay-box">
-            <div class="subdivision">
-                <h2>Counting</h2>
-                <p>Patient </p>
-            </div>
-            <div class="subdivision">
-                <h2>Counting</h2>
-                <p> Hospital</p>
-            </div>
-            <div class="subdivision">
-                <h2>Counting</h2>
-                <p>Treatment</p>
-            </div>
+      <div class="overlay-box">
+        <div class="subdivision">
+          <h2>Counting</h2>
+          <h3>Patient</h3>
         </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-button">Search</button>
-            </div>
-            
+        <div class="subdivision">
+          <h2>Counting</h2>
+          <h3>Hospital</h3>
         </div>
+        <div class="subdivision">
+          <h2>Counting</h2>
+          <h3>Treatment</h3>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li>
+            <!-- logo -->
+            <img
+              src="images/nm (3).png"
+              width="90px"
+              height="70px"
+              id="logo"
+              alt="Logo image"
+              style="margin-left: 10px"
+            />
+          </li>
+          >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <style>
+          /* styling article tag component */
+          article {
+            position: fixed;
+            margin-left: 10px;
+          }
+
+          /* styling navlist */
+          #navlist {
+            background-color: #0074d9;
+            position: fixed;
+            left: 45%;
+            top: -60px;
+            width: auto;
+            display: block;
+            transition: top 0.3s;
+          }
+
+          /* styling navlist anchor element */
+          #navlist a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 15px;
+          }
+
+          /* hover effect of navlist anchor element */
+          #navlist a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+        </style>
+
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
     </div>
     <div class="section-container">
-        <div class="section">
-            <h2>Visit your Nearest Nash Mukti Kendra</h2>
-            <form id="locationForm">
-                <label for="pincode">Pincode:</label>
-                <input type="text" id="pincode" name="pincode" required>
-                
-                <label for="state">State:</label>
-                <input type="text" id="state" name="state" required>
-                
-                <label for="district">District:</label>
-                <input type="text" id="district" name="district" required>
-                
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" required>
-                
-                <div class="button-container">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-              
-        </div>
-        <hr /> <!-- Horizontal line to separate sections -->
-        <div class="section">
-            <h2>Section 2</h2>
-            <p>Text for section 2 goes here.</p>
-        </div>
-        <hr /> <!-- Horizontal line to separate sections -->
-        <div class="section">
-            <h2>Section 3</h2>
-            <p>Text for section 3 goes here.</p>
-        </div>
+      <div class="section">
+        <h2>Find your Nearest Nash Mukti Kendra</h2>
+        <form id="locationForm">
+          <label for="pincode">Pincode:</label>
+          <input type="text" id="pincode" name="pincode" required />
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+
+          <label for="district">District:</label>
+          <input type="text" id="district" name="district" required />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+
+          <div class="button-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <!-- Horizontal line to separate sections -->
+      <div class="section">
+        <style>
+          h2 {
+            text-shadow: 0 0 3px #df72b9, 0 0 5px #db5fb4;
+          }
+        </style>
+        <h2>Section 2</h2>
+        <p>Text for section 2 goes here.</p>
+      </div>
+      <hr />
+      <!-- Horizontal line to separate sections -->
+      <style>
+        p {
+          font-family: Tahoma, Verdana, sans-serif;
+        }
+      </style>
+      <div class="section">
+        <h2>Nasha Mukti Bharat Abhiyaan</h2>
+        <p>
+          Nasha Mukt Bharat Abhiyaan was launched on 15th August 2020 by the
+          Ministry of Social Justice & Empowerment and is being implemented in
+          372 most vulnerable districts based on the findings of the first
+          Comprehensive National Survey and inputs from the Narcotics Control
+          Bureau (NCB)..The objectives of Nasha Mukt Bharat Abhiyaan include
+          creating awareness about substance abuse through activities such as
+          awareness generation programs, targeting schools and universities,
+          identifying dependent populations in communities, providing counseling
+          and treatment facilities
+        </p>
+      </div>
     </div>
     <div class="footer">
-        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+      <p>&copy; 2023 Your Website Name. All rights reserved.</p>
     </div>
     <script>
-       
-        document.getElementById("locationForm").addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent the form from submitting (for this example)
-            
-            // Retrieve the values entered by the user
-            const pincode = document.getElementById("pincode").value;
-            const state = document.getElementById("state").value;
-            const district = document.getElementById("district").value;
-            const city = document.getElementById("city").value;
+      // Add JavaScript logic here if needed
+      document
+        .getElementById("locationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent the form from submitting (for this example)
 
-            // You can now use these values as needed (e.g., send them to a server or perform actions with them)
-            // For this example, let's just display them in the console
-            console.log("Pincode:", pincode);
-            console.log("State:", state);
-            console.log("District:", district);
-            console.log("City:", city);
+          // Retrieve the values entered by the user
+          const pincode = document.getElementById("pincode").value;
+          const state = document.getElementById("state").value;
+          const district = document.getElementById("district").value;
+          const city = document.getElementById("city").value;
+
+          // You can now use these values as needed (e.g., send them to a server or perform actions with them)
+          // For this example, let's just display them in the console
+          console.log("Pincode:", pincode);
+          console.log("State:", state);
+          console.log("District:", district);
+          console.log("City:", city);
         });
     </script>
-</body>
+  </body>
 </html>
